@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chikara Martial Arts Academy</title>
+</head>
+
+<body class="bg-white text-black">
+
+  <!-- Hero -->
+  <nav
+    class="flex z-10 justify-center lg:justify-between items-center px-6 py-4 shadow-sm absolute top-0 bg-white/60 backdrop-blur-sm w-full">
+    <div class="h-12">
+      <img src="/logo.png" alt="Chikara Martial Arts Academy Logo" class="h-full w-auto object-contain" />
+    </div>
+    <div class="hidden md:block">
+      <ul class="flex space-x-6">
+        <li class="text-black hover:text-red-500 cursor-pointer">About</li>
+        <li class="text-black hover:text-red-500 cursor-pointer">Instructors</li>
+        <li class="text-black hover:text-red-500 cursor-pointer">Offerings</li>
+        <li class="text-black hover:text-red-500 cursor-pointer">Programs</li>
+        <li class="text-black hover:text-red-500 cursor-pointer">Gallery</li>
+        <li class="text-black hover:text-red-500 cursor-pointer">Contact</li>
+      </ul>
+    </div>
+  </nav>
+  <main class="h-[100vh] w-full flex justify-center items-center">
+    <div class="absolute inset-0 z-0 w-full h-full">
+      <img src="hero-bg.jpg" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-white/30"></div>
+    </div>
+    <div class="text-center z-10 flex flex-col items-center gap-8 relative max-w-[900px] xl:max-w-[1200px]">
+      <div class="relative w-full flex flex-col items-center gap-4 overflow-hidden">
+        <div class="relative z-10 flex flex-col gap-2 items-center">
+          <div>
+            <!-- Give this gradient -->
+            <h1
+              class="text-3xl px-4 lg:text-3xl xl:text-5xl 2xl:text-[96px]  bg-gradient-to-r from-[#CE2C38] to-[#68161C] bg-clip-text text-transparent! font-bold">
+              Transform yourself with us!</h1>
+          </div>
+        </div>
+        <div class="max-w-[741px] relative">
+          <div class="absolute -inset-8 bg-white/50 blur-md -z-10 rounded-3xl"></div>
+          <p class="text-xs lg:text-sm xl:text-2xl px-6 text-center font-author">
+            At Chikara Martial Arts Academy, we've cultivated a 35+ year legacy of martial arts excellence. With a
+            focus
+            on balancing body and mind, our approach goes beyond physical training, embracing the holistic development
+            of
+            each individual.
+          </p>
+        </div>
+
+        <div>
+          <a href="#demo">
+            <button class="gradient-btn cursor-pointer text-white mt-12 px-4 py-2 rounded-xl">
+              Book your Demo Today!
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- About Us and Why Chikara -->
+
+  <section class="p-6 flex overflow-hidden flex-col gap-12 items-center">
+    <div class="flex flex-col gap-12 items-center">
+      <div class="w-full flex flex-col gap-4 max-w-[1200px] items-center">
+        <h2 class="h2 py-6 text-center md:whitespace-nowrap">About Us
+        </h2>
+        <p class="text-center text-xs lg:text-sm xl:text-2xl mt-4 md:mt-0 font-author">
+          At Chikara Martial Arts Academy, we've cultivated a 35+ year legacy of martial arts excellence. With a focus
+          on
+          balancing body and mind, our approach goes beyond physical training, embracing the holistic development of
+          each individual.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-[1500px]">
+        <div class="bg-gray-200 rounded-lg p-10 text-center">
+          <h3 class="text-2xl font-bold">BODY</h3>
+          <p class="my-4 font-author">
+            Physical strength, agility and flexibility
+          </p>
+        </div>
+
+        <div class="bg-gray-200 rounded-lg p-10 text-center">
+          <h3 class="text-2xl font-bold">TECHNIQUE</h3>
+          <p class="my-4 font-author">
+            Effective self-defence skills, open-hand technique mastery and weapons training
+          </p>
+        </div>
+
+        <div class="bg-gray-200 rounded-lg p-10 text-center relative">
+          <div class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
+            <img src="stamp-red.png" alt="Red stamp background" class="w-[100px] h-[100px] object-contain " />
+          </div>
+          <div class="relative z-10">
+            <h3 class="text-2xl font-bold">MIND</h3>
+            <p class="my-4 font-author">
+              Discipline, respect, humility, mental fortitude, confidence and determination
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="max-w-[741px] text-sm lg:text-base xl:text-lg font-bold font-author">
+          Our instructors are dedicated to providing a safe and supportive environment for all students, ensuring that
+          each individual can achieve their full potential.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 items-center">
+      <h2 class="h2 lg:text-3xl xl:text-6xl font-bold py-6">Why Chikara</h2>
+    </div>
+    <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 pb-8 gap-24">
+      <div class="grid-span-1 flex flex-col gap-4 justify-center items-center">
+        <div class="relative">
+          <div class="z-0 absolute h-full w-full -translate-y-[90px]">
+            <span class="wcbn">1</span>
+          </div>
+          <div class="z-10 relative">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="90" height="90" fill="url(#pattern0_1_129)" />
+              <defs>
+                <pattern id="pattern0_1_129" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_1_129" transform="scale(0.0111111)" />
+                </pattern>
+                <image id="image0_1_129" width="90" height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADq0lEQVR4nO2dvU4VQRTH/+oqUFGCxsbPhCfgRoOFYKWPoI+gdHoTiBYkQqVGTRRp9AkMFt5KQa0ojQZItLAQwRAUvWpi45hNhmRzMzPsx9mZPXvPLzkJgTNzh9/unL13dlgAQRAEQRAEQRCEmnMOwByAVQC/dKwAeARgLPTg6sBJAK8AqF1iEcCJ0IPlyhkA31JIVjri3JESx7MXNT2Ts0hWOrYAHCceSx+A+wC2ddzT36sFacqFLRaIx3LH8Bq3UJMLnyoYo4Tj2TD0v44aMEcgetbRv6pwrAGYAXDAh+hVggGvMBW9E7Hs0mkTDLTNXPQ6F9E/mIuOg0XpWBbRfi6GD0X07owRiD4LPgQrHTEvCkheBC+Cij4CYLMiH8FrLRp6gWgro+QR8CO4aOilz4UUkl8yPJMrJXqHUf2xelm/z27rr2eZXfgqL7rOKBHtBxHtCRHtCRHtCRHdLaJ7AYwDWNL7OFSg+K5vzvbVUfRhAG8DylUZVwRZiu6toGQF4HdJezuCiR6vgFTVDaKXKiBVGeJBSb9vMNEU9wwVYcQ7pu7W8WJIJegvgKsADqHasBd9DTxgL/ogeMBeNBdEtCdEtCdEtCdEtCdEtCdEtCdEtCe6VvQeAPsy5EcZ87tGtGISIhoiGnJGS+lAlpnwWUoHvNTnaRGN+vxBp2sgHwAcBXAMwEeiq/Z+x+2zhqNdw9KmrfusPC55U4m8KSLRjZzC8h6gyuCSdzmRd4VIdNPS/nmKti3Ot9Fc8i4m8i4RiW4VkFXkIAXHJe98Iu8CgegIwE9L++EU7VnXaZe8U4m80wSiGwVFFT1QQXHJG0rkDRGIbhJMfbZ12iVvMJE3SCC6RSCJbZ12yetJ5PUUFB0RTXu2ddq1m7OTPwVEN4gEsa3TWRZa1gqIbhJOeZZ12ibunSH3fQHRLUI5LOu0TdxrQ+6bnKIj4unOsk7bxM0bcp/lFN0gFsOyTtvEPTbkPskpulnCVGdXp23ibqd8nKVKIboMKezqtE3cdUPujRyio5KmObs6nWaJNM1SqW8h7Op0miXSNEulIaY4qzqdZok0zVJpCBms6rRNXLws2olrqdTG1xKn97Cl7/jRyJXjk2Gg/wAMGHIH9M9UR8R9ZHke9LausUWJdF+d/X9BBZk0DPSpI3/ekD/hyJ8x5N8kHP9MqH0aec6KSX1WbuongfU78vv1vwnZ1G0mdtndGWkZG3pRarrgblBb/2v6Naj7FwRBEARBEARBACv+A/HBLYvqURYpAAAAAElFTkSuQmCC" />
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="max-w-[220px]">
+          <h3 class="text-center">
+            WORLD CLASS INSTRUCTORS
+          </h3>
+        </div>
+      </div>
+      <div class="grid-span-1 flex flex-col gap-4 justify-center items-center">
+        <div class="relative">
+          <div class="z-0 absolute h-full w-full -translate-y-[90px]">
+            <span class="wcbn">2</span>
+          </div>
+          <div class="z-10 relative">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="90" height="90" fill="url(#pattern0_1_130)" />
+              <defs>
+                <pattern id="pattern0_1_130" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_1_130" transform="scale(0.0111111)" />
+                </pattern>
+                <image id="image0_1_130" width="90" height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEEUlEQVR4nO2cQU/UQBTH/xDpcvPKigfRLyEeFD1qYiTGg34G2ETlqob4IRS+gwY0AVTgqOwJL6JXPCIhcTHBW80ks3HTbLcz05nOmzfzT14C3aH9v1+WaV9fO0AYuglgFcB3AH9kiJ9XAMz5NsdBVwDsAMgr4hOAGd9mQ9U1AMcKkPvxC8Csb9Oh6RKAIw3I/TiW/wVJito2gNyPXdWDxK5bNSD3I50gFbRaAu8MwGMAUwDaAJ7IbcPGvlY5UOz6UQJPQC7qacnYAw++g9NpCTzxTS5qqmRsDxGoWFzklkJMF0W1Le4/mCJItbjIDUPMyUUtOTweySJIt7jIDeJMwm7LEPPzX8fHJFUEmRYXeSBBpgiqU1zkgcQuh+IiDyTmqBcXupdxLmPUZR/pIkinuCiq6wH0F1SLZBHUKzE16pvcV8cD6AVUq02xCCpLSEUtAF8bhLwPIGsgLyeqa+hiQ7AF5OkG87IuG4ZaABbl/GnzBCn29VlOF5mHvKyKnCGueZEzxDUvcoa45kXOENe8yBnimhc5Q1zzImeIa17kDHHNi5whrnmRMzRQbYqbVnsDT5/uyQpUfBZcXqaGzgF4AOAZgNsD28cA3AHwXH4uxulquuL+icp9DxagxwFsFca/AXAewNvC9k05HpbvCO5XfLNZgL5f8jcnJdvFeFV1LN2bZgH6hQaMXE4vqupa6rawAH1PE/RdDT86t1l73EGPAVhThLEmx6uqbPqJEjTkia8KyokcpypxcjtMU8d/iauId4pA1hWvOgTkDc0paSHWq468JOYdQK5q1LIA/VITyvKIfU0aQo6iYHk4Yk4etl2MN4X8U+5Xt1HLAvTEkOeo1+WJb72wfVuON4G8Kcc1lZdTmRqaAPBITgvzAye8cfn7svwm+4BcJy9natpQpnDFslUTMmIHnTUEOWrQGYD3DUGOFnTWMOQoQWceIEcHOvMEOSrQmUfI0YDOPEOOAvSkLDZGQd4ogWyz4csa9GQNyLYbvmxAtwrPXZzIG0AmkF00fFmAnjZ4b2UUZBcN3+BBtwwhtxpu+AYPuuMAsouGb/CguxqQDxUhu2j4Bg/6VAO0gKIq2w3fqED3NHzYbvgGD7pr+QV5Fw1fk7ycS9fQouUX5G03fE3zci5dQy3Z7rf5grythm+dvJzLtGDZt/iCvI2Gr428nMrUUCanhv6L9nVekHchNqCpi1xe5AxxzYucIa55kTPENS9yhrjmRc4Q17zqLMdGVRdKcvpNcYHBYUsQh6IligsMrigsQRyKqpZKfuV79fM8krgOz/pIAELuOMSjDN4Vw0Ldl0FEs3KZ9pxZHAG4CmKaYTaNfJD/rWR1Qy5qfeBpMe7cMITXb/LqwvuJLykpKSkpKSkpKSkpCU3pH/IGvDaXF9/wAAAAAElFTkSuQmCC" />
+              </defs>
+            </svg>
+
+
+
+          </div>
+        </div>
+        <div class="max-w-[220px]">
+          <h3 class="text-center font-bold">
+            FLEXIBLE PLANS
+          </h3>
+        </div>
+      </div>
+      <div class="grid-span-1 flex flex-col gap-4 justify-center items-center">
+        <div class="relative">
+          <div class="z-0 absolute h-full w-full -translate-y-[90px]">
+            <span class="wcbn">3</span>
+          </div>
+          <div class="z-10 relative">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="90" height="90" fill="url(#pattern0_1_133)" />
+              <defs>
+                <pattern id="pattern0_1_133" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_1_133" transform="scale(0.0111111)" />
+                </pattern>
+                <image id="image0_1_133" width="90" height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEyklEQVR4nO2ce4hVVRSHv9RRcygr7eHE9BAre2iaFCJBL8ugBygplREFJUGJgZZEkE1C2IuYqKAHPRyx/ggSK5FISonoIZlFEFGTf0SaE4XR9HDUGxvWhcPh7HvXPvveuZ571gcLYebsdc/+zXWftdda+4BhGIZhGIZhGIYRzDjgBWAA+BXYBjwL3AJ0hrszfLwBVDy2CzjNO9JQcxwwVENoZ+v07gwfV9QR2dk33tGGmnsVQn+sd2f4eEUh9HPe0YaaLxRC36V3Z2QxEhhUCD0nc7ShZqpC5EPA0XqXRhYLFUL3Z440gnhEIfSGMJdGFhsUQq/OHGkE0a8QelGYSyOLK4H7gD7gK+C/DKHPzhxpRNEBTANuBtYAG4FRcS4NY5h4AHhT/r0WOMWUbw7bMtbjP4CtkvRfAnSZ+HEcIaLWizguN6HjOFUhsrPjTeg4rlOI/IuJHM+DCqE3m9DNLcZWxJ5okdCnA8fSJnyrEPrWYbyf8cBK4Gf57P3AU/LQLixjFFVvZzOG4V5OBh4H9nnu4U4KzAUKkYfkD9IspgC9wD917uOnIqcAbmthe8EsYC1wQBleViTvUkieVExufQM/bwRwvbQsVHKY26kWkvcVk3P5j0b29e3NKXJF1u9CslsxuWsi/B8FLAfOS/zsoQihP6eAnKCcXHcO3ycBjyZyKG4trjIB+CuHyG7MJRSQuYrJ/R7o8wxp+U1HEPtTqdfeAIGH5DlxFgVluWKSHyl9zZBvba2Y/OnE9d0ifq3P/ld8nknBeU0h9DN1fFwMvBPwX98tG1XWea4bkNLZJNqEWcBS4EXgU8+66RL+WVwlBdzQddYlsKqcL51P1d/1y/24yKStGSG7tAXAKuAtYKbn2i05o4Y9wJEJPy4ruAO4qci7vmYykFPodDfqMbQ5VwNvSxvYDfLAcd2kGroiRD4giaPSsDpDhEHpj34ZWAZM94ydl0Pgv6WBfTIlY6NCnB7P2PsDt8y9Za6g71KI5JaULPoUY93W/mFJ4peW8amwyme+jcLOOinVJU3OXxeCE5Xb30HPw7HD0/y4VZJPhS43NYLJIrDmjIqzzzx+pieuOSi7QjvTgi4HkWUveYReLN9o5/Oc5n0v2jOxX8kwF95lcWGZI4gqo6SmNj8wFVrJsMtaOI/DljHSd/G9iPRj6kG2PYfQE1s4n8OOiRKr/lYnBr4xUGTXuGLI+zLqRRDJ2tpI4IcAoTeVXeWZ0pWv7YO4NDH27gChS5X0SdMjcWsl5zdzXEBq073Sp5TMyRk5HJJTVVVWKcf5snZtT0i2LG1rE35mK653BdPRlJRFEUJ/kAj1bldc/zUlptMTwvnsoFRPZqf83CN9GrXGlv7FVD0KgbU5iC7ZMS6T67cnGl7cMlVq3ImoP2tUMR6LzEGMlgSUawYvPQul9pY8KbVSWcXoBM61kr6ebumBmBtYxZiXWF6+BF4HVsgbDVxDotEgVtRZ3/fKgRwjkj7Fw9TlT4xIdiqEvsNUjqPDU1BN20UmdBzTlJscezd0JIsVQrvqjBHJGoXQrkXXiOQ9hdCuJGZE8olC6GTl3MjJ84oCgXsLjRHJJOC7GkK/awo3jrHSduBOWX0oZ0lcjvtVe02xYRiGYRiGYRgGreF/6DfcZfLa5+0AAAAASUVORK5CYII=" />
+              </defs>
+            </svg>
+
+          </div>
+        </div>
+        <div class="max-w-[220px]">
+          <h3 class="text-center font-bold">
+            EQUIPMENT
+          </h3>
+        </div>
+      </div>
+      <div class="grid-span-1 flex flex-col gap-4 justify-center items-center">
+        <div class="relative">
+          <div class="z-0 absolute h-full w-full -translate-2 -translate-y-[90px]">
+            <span class="relative wcbn">4</span>
+          </div>
+          <div class="z-10 relative">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="90" height="90" fill="url(#pattern0_1_131)" />
+              <defs>
+                <pattern id="pattern0_1_131" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_1_131" transform="scale(0.0111111)" />
+                </pattern>
+                <image id="image0_1_131" width="90" height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD2klEQVR4nO2bTWhWRxSGH/9igr/YKjEWBakrQRdxqVC1i4rZaRciim4EtdRFixGEgi0xdRPwB9G6cVtpQVA3gouKKGlLXUhAKFUQIwpaNYnGGOnIyBEk9H757ty5c2e+nAcOSLjfmfe8DMeZuXNBURRFURRFURRFqZtpwCpgO3AY+AX4A/gbeAS8kngkf/tdnukCtslvbQ5lDE3AOjH1N+AlYArGC8llzV87kY2fKzP2PDDgwdjxYkDG2i5jN/zM7QB+BkYCmJsVI6Kho9Fm+hTgW+BhheZmhdX0jWhMfhZfjMDQ8eKCaE2WHxwLHwV6gWPAbmA98CmwAJguYf+9DPgc2CPP9spvXca0WpOkDRjOUeifwCExbkaBcWdKjkOSs97xX4rm5Diec0adLkHDTzk1HCUx2hzWw6+BxR41LJKNTR4N9vlPSIiTjn2yx6OGHkcNJ0iEBTl7s/kghoD5HjR8BAw6arCzupUE6HIs0Eh8X+FqJ5kViF0tPC5Y5DNgTgENs4F/C2p4IquXaNlXsEAj0VlAwwFPGr4mUiYDdzxujVscNLR43Or/IzVFR4enAo3EXgcNX3nWsJEIueS5yHs5zx/sSdxdzxrsOU1ULAHeeC7SADtyaNhZwvj/yRlLNBwpoUgD3K6zT9pn+krSYGuLguny/s6UFJvr0PBliePb5WozEbCtxCINcBOYNI6GPKd0LmFfgVXO9ZKLNMAXNcbfEGD8G1TMygBFGuBqDQ1XA2lop0JOBSrS1NAQanx7tl0Jdhf2dAIZPVjV+cfWgEWaGjpCarD/8Qfn8gQ0+gqBWVTSTtBEbrTdKS4N6DMHAxdoamgJreO7gD6/2xpPVKPvhjo+XV1BcSYio218FsLoM2o0Z8s2uVne6eW9vblf7nq0yWsql9ukWZgK9AwWvE01Lps8vf/rrNBoX3q2UCK/Ogha+D95Wis02pceewO1FGY7fvaQRep5RuWykHdcXxVlkXoeI1eKo9lyZ5F6HhvX8MzcAlvuLFLP835L/jEeWeEoJEaDsnCtbzme18/P1WjGmtwPTKWENfSLBpiJvvI8ANZQ4kWZbhkkVYOyqPf3f8lqYxYBmCwf5JyTTyJSMMgUyDMstdqaK6NVruveitAgUzBPn2zP5xEZ7fJ11VDCRg/HMHvzrLv3SD9LxWh722lXqN6rKIqiKIqSLsZTVJU/GYwarUYbndFo69DWESlGe7QabbRHoz1aW0ekGO3RarTRHo32aG0dkWK0R6vRppF6dL+HGX2/wvzJ8KMHI7orzJ8MTWKGy8zrl982VZhfURRFURRFURSFhuYtQCl3syPXjycAAAAASUVORK5CYII=" />
+              </defs>
+            </svg>
+
+
+          </div>
+        </div>
+        <div class="max-w-[220px]">
+          <h3 class="text-center font-bold">
+            CHANGING ROOMS
+          </h3>
+        </div>
+      </div>
+      <div class="grid-span-1 flex flex-col gap-4 justify-center items-center">
+        <div class="relative">
+          <div class="z-0 absolute h-full w-full -tranlate-4 -translate-y-[90px]">
+            <span class="wcbn -translate-x-6">5</span>
+          </div>
+          <div class="z-10 relative">
+            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="90" height="90" fill="url(#pattern0_1_132)" />
+              <defs>
+                <pattern id="pattern0_1_132" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_1_132" transform="scale(0.0111111)" />
+                </pattern>
+                <image id="image0_1_132" width="90" height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFO0lEQVR4nO2cTWgdVRTHf6UxqVi/EKwf8NKFooiYmlZTRdFqEVy4EVzqTuuiWHFhlFLRrMSqtdWFRhHBhahokoWVokuX9YOaVFuEglVq/WjFmDbVtiMXzsXh5c28eXM/5s6b+4cDgfdy7rk/zrtz58yZC1FRUVFRUVFRUXY0BGwAJoApYD9wDPgHOCV/z8lnzwF3yv9EFdRaYBL4E0h6tOPAG8Bo0cGaqFFgTwm4WfYpsKbqSYWkc4GdwGmLkLX9C+wAVtBwXQPscwC43b4Brqahugn41QNkbX8At9IwjQHzHiFrU2PeTIOWi98rgKzttyYsIyuAryuErG2fXIStaRmwGfgWOALMAI8Cw1SjnQFA1vayzYk9njOQuqt6EbgbGMTPPvl0AIDTW78RW5P7oeCgC8BnwBaH2b4nALjt9omtyZ0tGYDK9u0Ws31tAFA7meJzo4X5WdsSTQGbgFbOWMtzPpsMAGqWvR4K6KTNZuW29hHgIWAbsBvYmxHDUMkCkS87ZuNX6zPgdzNi2GDB90ngFbnZOE9sTHYxixb83+EK9GrZ5s1YvEN7LCOGCUO/h4EbcuY4It8xGeNZV6Dbf9obZas3ZxDsPRkxTBtmch7kNGyTzP7YB+h2DUu2T/eY7VlX7/0GANRyUVS7DK873kGnNShbvCLZfmWGD5O6Ri8FoPWG9Y9KQXfK9iyfA3TWKQMAKymu8w3GUctOUKDL+Fz0BPoCg3FO0Aegf6nB0qEKbl6huPA5ZwBA7ZOL6lWDcVR10ysUFz7fNwCwWLDCtsbwWvBeP4B+2gBAIjcjI10g/2Q4xng/gF5nCEFn9i5Zh1eK3SLLhUkmaxvtB9DLgB8twHBlhyRGr1Bc+ZwIAGiWPWPIozQUFz4vlbpFEpipJWmVIY/SUFz53BEA2HZTpQX6DfTFUlNIArGjwEWGLIyhuPJ5fwCAtT1gyMEaFFc+3woAsnqGSb+DPkd6l6uC/IWLNwNCBK1LmnsrgKxqGpfgQKGCRrZVs54hX4YjhQxaZ7aPZeRz4EIcKnTQ+nHZOw4hvy3XBZoOWks14/xtEfAJ6SX0ojqBVrpO3jcxhfwVcC35Mi4k1Rk08pB3vGT5U7XiPl+gxUuVWT+k4aDTLxMd6AHyAal9d9NVqd2ONdUZtNIVBWvZP3fpdNW6V5oarcdcd9DIK2tncsY9I09euq3HWzv4aRzooS6fTxr2N3/kOjnqAvqlAneRJzMK95dXFLPzARIHPs/mdKNqvVkym13F7HyAxJHPo10eK411GHNdhTE7HyBx6FO1Cudd0L5Pffe7imN2PkDi2Kd6KSlLtwMHZc98W8UxOx8gcexzocDts4n/CJr/IXxp+W3eCDoHhKpZ2FIEnQNC3cXZUgTtCUQELYqga7yT8em/NlCSCHqpIugaQ0liRi9VBF1jKEndMzrrqJ/hgIJu5fhcn/Pqc5UxL1H6QaStU8ISSy/yby/YezcvbWNPGYB3Dnp3gYnoyUwXPBMvKRF0S8qfUxYOYikD3jno+0pORmf7xg4PTosErbL2rh6y1jV456CRs45MJzIj2b4653stOdDKRtbaBu8FtOqkfK1Lb0Q/27wv0FrXAy94bv5Oeliq1LE+DwMPpo54+8vxuM61StpkP6joTLqFgkd0LpdTILdIrMfrBtpku5UYZK3pobMD0nYwbiHj1T1GpbK1FZuXLeMmhwfLmoBXx1MEo8Ees33W8uGxpuDzEuVJAlYrle2HxYocEFuVBmSLp8Efkb6QJ2x3/EdFRUVFRUVFRUVFReFb/wF217QYAe+53AAAAABJRU5ErkJggg==" />
+              </defs>
+            </svg>
+
+
+
+          </div>
+        </div>
+        <div class="max-w-[220px]">
+          <h3 class="text-center font-bold">
+            ACCESSIBLE LOCALITY
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Red Stats -->
+  <section class="p-8 py-[150px] flex flex-col gap-12 items-center relative">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#CE2C38] to-[#68161C]"></div>
+      <img src="red-bg.jpg" alt="Background" class="w-full h-[100%] object-cover opacity-100 mix-blend-soft-light" />
+    </div>
+    <div class="flex flex-col lg:flex-row gap-16 author relative z-10">
+      <div class="flex flex-col gap-4 items-center justify-between">
+        <div>
+          <h2 class="text-7xl xl:text-8xl 2xl:text-9xl font-bold !text-white">35+</h2>
+        </div>
+        <div>
+          <p class="text-xl xl:text-2xl 2xl:text-3xl font-medium !text-white">Years Experience</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 items-center justify-between">
+        <div>
+          <h2 class="text-7xl xl:text-8xl 2xl:text-9xl font-bold !text-white">2</h2>
+        </div>
+        <div>
+          <p class="text-xl xl:text-2xl 2xl:text-3xl font-medium !text-white">Countries</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 items-center justify-between">
+        <div>
+          <h2 class="text-7xl xl:text-8xl 2xl:text-9xl font-bold !text-white">8</h2>
+        </div>
+        <div>
+          <p class="text-xl xl:text-2xl 2xl:text-3xl font-medium !text-white">States</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4 items-center justify-between">
+        <div>
+          <h2 class="text-7xl xl:text-8xl 2xl:text-9xl font-bold !text-white">40+</h2>
+        </div>
+        <div>
+          <p class="text-xl xl:text-2xl 2xl:text-3xl font-medium !text-white">Happy Clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <!-- <section class="p-24 flex flex-col gap-12 items-center bg-[#181818]">
+    <div class="slideshow-container text-white ">
+      Hello
+    </div>
+  </section> -->
+
+  <!-- Instructors -->
+  <section class="p-10">
+    <div class="my-10">
+      <h2 class="h2">Our Instructors</h2>
+    </div>
+    <!-- Instructor 1 -->
+    <div class="flex flex-col justify-center lg:flex-row items-start gap-8 max-w-[1200px] mx-auto">
+      <div class="w-[254px] h-[288px] bg-red-200 rounded-xl overflow-hidden">
+        <img heig src="/Profile-picture.webp" alt="Hanshi Venkatesham Puram"
+          class="w-full h-full object-cover object-top" />
+      </div>
+
+      <div class="text-xs">
+        <div>
+          <h4 class="text-red-500 font-bold xl:text-[26px]">HEAD INSTRUCTOR</h4>
+          <h3 class="text-black font-bold xl:text-[36px]">Hanshi Venkatesham Puram</h3>
+          <p class="xl:text-[24px]">Founder & Technical Director</p>
+        </div>
+        <br />
+        <div class="text-sm">
+          <h4 class="text-black font-bold xl:text-[26px]">Credentials</h4>
+          <p>
+            9th Dan Black Belt,<br />
+            Global Shotokan Karate-Do International 7th Dan Black Belt, <br />
+            World Karate Federation(WKF) </br>
+            7th Dan Black Belt, Karate Association of India (KAI) </br>
+            Vice-President, Karate Association of India </br>
+            <br />
+            <br />
+            With over 35 years of experience, Hanshi Venkatesham Puram is a living embodiment of martial arts
+            excellence. His journey includes:
+          <ul class="list-disc list-inside">
+            <li class="xl:text-xl">
+              Training with karate legends like Seiji Nishimura, Hitoshi Kasuya, Hideo Yamamoto, and Toru Arakawa
+            </li>
+            <li class="xl:text-xl">
+              Earning multiple international and national medals
+            </li>
+            <li class="xl:text-xl">
+              Mentoring students who became national and international champions
+            </li>
+          </ul>
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Karate Kick Section -->
+  <section></section>
+
+  <!-- Programs -->
+  <section class="p-4 lg:p-24 flex flex-col gap-4 items-center">
+    <div>
+      <h2 class="h2">Programs</h2>
+    </div>
+    <div class="lg:my-8">
+      <p class="text-sm lg:text-base xl:text-lg font-author">
+        At Chikara, we offer a variety of programs tailored to different age groups and goals. All our programs are
+        available in group classes and one-on-one sessions.
+      </p>
+    </div>
+
+    <div class="flex flex-col text-xs lg:flex-row gap-8">
+      <div class="flex justify-center items-center flex-col gap-4">
+        <div class="w-[160px] h-[160px] rounded-xl flex justify-center items-center">
+          <div class="w-[100px] h-[100px]">
+            <img src="kids-program.png" />
+          </div>
+        </div>
+        <div class="xl:text-[26px] author font-bold!">
+          <h3 class="text-red-500">
+            KIDS PROGRAM
+          </h3>
+        </div>
+        <div>(3-16 ages)</div>
+        <div>
+          <p class="text-center font-author lg:text-[1rem]">Our kids' karate program is designed to help young
+            practitioners develop
+            the physical,
+            social mental skills
+            required to conquer today's world.</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center flex-col gap-4">
+        <div class="w-[160px] h-[160px] rounded-xl flex justify-center items-center">
+          <div class="w-[100px] h-[100px]">
+            <img src="adult-classes.png" />
+          </div>
+        </div>
+        <div class="xl:text-[26px] author font-bold!">
+          <h3 class="text-red-500">
+            ADULT PROGRAM
+          </h3>
+        </div>
+        <div>(16+ ages)</div>
+        <div>
+          <p class="text-center font-author lg:text-[1rem] ">Our adult program caters to practitioners of all
+            levels,
+            from beginners to
+            advanced. We
+            focus on providing tailored programs to their goals.</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center flex-col gap-4">
+        <div class="w-[160px] h-[160px] rounded-xl flex justify-center items-center">
+          <div class="w-[100px] h-[100px]">
+            <img src="female-only-classes.png" />
+          </div>
+        </div>
+        <div class="xl:text-[26px] author font-bold!">
+          <h3 class="text-red-500">
+            FEMALE-ONLY CLASSES
+          </h3>
+        </div>
+        <div>
+          <p class="text-center font-author lg:text-[1rem]">Our women-only classes provide a comfortable
+            environment
+            to:
+            Learn practical self-defence techniques
+            Improve fitness and strength
+            Build confidence and empowerment
+            Join a supportive community of like-minded women</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="flex flex-col gap-4 lg:pt-8 lg:translate-y-4 lg:max-w-[700px]">
+      <p class="text-center font-author lg:text-lg">
+        Whether you're a beginner or an advanced practitioner, our flexible program structure allows you to choose the
+        path that best fits your goals and schedule!
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="p-4 flex flex-col gap-4 items-center pb-8 lg:pb-24">
+    <div>
+      <h2 class="h2">Gallery</h2>
+    </div>
+
+    <!-- Swiper container -->
+    <div class="w-full max-w-[1200px]">
+      <div class="swiper gallery-swiper">
+        <div class="swiper-wrapper">
+          <!-- Gallery slides -->
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Kids-throw-and-attack.webp" alt="Kids throw and attack training"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Grand-champion.webp" alt="Grand Champion"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Brown-belt-promotion.webp" alt="Brown Belt Promotion"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Training-under-WKF-Champion.webp" alt="Training under WKF Champion"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Face-kicks.webp" alt="Face kicks training"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Dojo-full-picture.webp" alt="Dojo full picture"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Belt-presentation.webp" alt="Belt presentation ceremony"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Belt-ceremony-end.webp" alt="Belt ceremony end"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Assam-Police-falicitation.webp" alt="Assam Police falicitation"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Shomen.webp" alt="Shomen"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/First-belt-test.webp" alt="First belt test"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Assam-team-training-camp.webp" alt="Assam team training camp"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Chikara-Opening-day.webp" alt="Chikara Opening day"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Dubai-open-World-Championship-veteran.webp" alt="Dubai open World Championship veteran"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Khelo-India-winners.webp" alt="Khelo India winners"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative group cursor-pointer">
+              <img src="/WEBP/Training-seminar.-by-WKF-Judge.webp" alt="Training seminar by WKF Judge"
+                class="w-full h-[400px] object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-[1.02]" />
+              <div
+                class="absolute inset-0 bg-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="swiper-button-next !text-red-500 after:!text-2xl hover:!text-red-600 transition-colors"></div>
+        <div class="swiper-button-prev !text-red-500 after:!text-2xl hover:!text-red-600 transition-colors"></div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination !-bottom-10 !top-auto"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo & Contact -->
+  <section id="demo" class="grid-cols-1 grid lg:grid-cols-2 lg:px-24">
+    <div class="bg-white flex flex-col justify-center m-2 p-2 lg:p-10 rounded-lg max-w-full">
+      <h2 class="h2 text-red-500 mb-6">Book your Demo Today!</h2>
+      <form class="flex flex-col gap-4" action="YOUR_WEB_APP_URL" method="POST">
+        <input type="text" name="name" placeholder="Name*" required
+          class="text-sm lg:text-base p-2 border rounded-md bg-white text-black placeholder:text-gray-500" />
+        <input type="number" name="age" placeholder="Age*" required
+          class="text-sm lg:text-base p-2 border rounded-md bg-white text-black placeholder:text-gray-500" />
+        <input type="tel" name="phone" placeholder="Phone"
+          class="text-sm lg:text-base p-2 border rounded-md bg-white text-black placeholder:text-gray-500" />
+        <input type="email" name="email" placeholder="Email"
+          class="text-sm lg:text-base p-2 border rounded-md bg-white text-black placeholder:text-gray-500" />
+        <select name="category" class="text-sm lg:text-base p-2 border rounded-md bg-white text-black">
+          <option value="Kids">Kids</option>
+          <option value="Adult">Adult</option>
+          <option value="Female-Only">Female-Only</option>
+        </select>
+        <button type="submit"
+          class="gradient-btn cursor-pointer text-sm lg:text-base text-white py-2 px-4 rounded-md transition-colors">
+          Book Now
+        </button>
+      </form>
+
+      <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+          e.preventDefault();
+          console.log("Form submitted!");
+        });
+      </script>
+
+    </div>
+    <div class="bg-neutral-100 m-2 p-8 rounded-lg">
+      <h2 class="h2_2 text-red-500 mb-3">Contact Us</h2>
+      <address class="flex flex-col gap-4 mb-8 text-sm lg:text-md not-italic">
+        <div class="flex flex-col">
+          <strong class="min-w-[80px] text-sm lg:text-base">Email:</strong>
+          <a href="mailto:info@chikarakarate.com"
+            class="text-sm lg:text-base text-red-600 hover:text-red-800">info@chikarakarate.com</a>
+        </div>
+        <div class="flex flex-col">
+          <strong class="min-w-[80px] text-sm lg:text-base">Phone:</strong>
+          <a href="tel:+919876543210" class="text-sm lg:text-base text-red-600 hover:text-red-800">+91 98765 43210</a>
+        </div>
+        <div class="flex flex-col">
+          <strong class="min-w-[80px] text-sm lg:text-base">WhatsApp:</strong>
+          <a href="https://wa.me/919876543210" class="text-sm lg:text-base text-red-600 hover:text-red-800">Message us
+            on WhatsApp</a>
+        </div>
+      </address>
+
+      <h2 class="h2_2 text-red-500 mb-2">Timings</h2>
+      <div class="mb-8">
+        <p class="font-semibold mb-2 text-sm lg:text-md">Monday to Friday</p>
+        <ul class="list-none space-y-1 text-xs xl:text-xl">
+          <li>Morning: 6:00 AM - 10:00 AM</li>
+          <li>Evening: 4:00 PM - 10:00 PM</li>
+        </ul>
+      </div>
+
+      <h2 class="h2_2 text-red-500 mb-2">Our Location</h2>
+      <div class="flex flex-col gap-2">
+        <strong class="text-gray-800 text-sm lg:text-xl">Chikara Martial Arts Academy</strong>
+        <p class="leading-relaxed text-gray-600 text-xs lg:text-xl font-author">
+          3rd floor, Kakatiya Golden Crysta,<br>
+          Opp. Sampoorna super market,<br>
+          above Om Book store,<br>
+          Muppas Panchavati Colony,<br>
+          Manikonda, Hyderabad - 500034
+        </p>
+        <a href="https://maps.google.com/?q=Chikara+Martial+Arts+Academy+Manikonda+Hyderabad" target="_blank"
+          rel="noopener noreferrer"
+          class="gradient-btn inline-flex items-center gap-2 text-white px-4 py-2 rounded-md transition-colors mt-2 w-fit">
+          <span>View on Maps</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col items-center gap-6">
+        <div class="flex gap-8">
+          <!-- Instagram -->
+          <a href="https://instagram.com/chikarakarate" target="_blank" rel="noopener noreferrer"
+            class="hover:text-red-500 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.645.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.645-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://facebook.com/chikarakarate" target="_blank" rel="noopener noreferrer"
+            class="hover:text-red-500 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+            </svg>
+          </a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/chikarakarate" target="_blank" rel="noopener noreferrer"
+            class="hover:text-red-500 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.5 2h3.9l-7.9 9.1L22 22h-7.2l-4.5-6.7L5 22H1.1l8.5-9.8L2 2h7.3l3.9 5.9L17.5 2zm-2 18h2.1L7 4H5z" />
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com/chikarakarate" target="_blank" rel="noopener noreferrer"
+            class="hover:text-red-500 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-gray-400 text-center font-author">Follow us for daily inspiration, tips, and updates!</p>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+[90m[main 2025-01-31T14:51:01.606Z][0m update#setState disabled
+[90m[main 2025-01-31T14:51:01.606Z][0m update#ctor - updates are disabled as there is no update URL
+[305057:0131/202104.023118:ERROR:nss_util.cc(357)] After loading Root Certs, loaded==false: NSS error code: -8018
+[90m[main 2025-02-16T08:24:07.255Z][0m update#setState disabled
+[90m[main 2025-02-16T08:24:07.256Z][0m update#ctor - updates are disabled as there is no update URL
+[30559:0216/135410.329184:ERROR:nss_util.cc(345)] After loading Root Certs, loaded==false: NSS error code: -8018
+[30559:0216/140021.714382:ERROR:atom_cache.cc(230)] Add chromium/from-privileged to kAtomsToCache
+FetchError: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo EAI_AGAIN api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorZVdnCy/resources/app/node_modules/node-fetch/lib/index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EAI_AGAIN',
+  code: 'EAI_AGAIN'
+}
+FetchError: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: connect ECONNREFUSED 192.168.31.1:443
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorZVdnCy/resources/app/node_modules/node-fetch/lib/index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED'
+}
+Opening in existing browser session.
+FetchError: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: connect ECONNREFUSED 192.168.31.1:443
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorZVdnCy/resources/app/node_modules/node-fetch/lib/index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED'
+}
+FetchError: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: connect ECONNREFUSED 192.168.31.1:443
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorZVdnCy/resources/app/node_modules/node-fetch/lib/index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED'
+}
+Opening in existing browser session.
+Opening in existing browser session.
+[493302:493324:0216/175845.275102:ERROR:nss_util.cc(345)] After loading Root Certs, loaded==false: NSS error code: -8018
+Created TensorFlow Lite XNNPACK delegate for CPU.
+Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#141 is a dynamic-sized tensor).
+[493302:493329:0216/175848.791083:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[493302:493302:0216/175852.341233:ERROR:password_sync_bridge.cc(1181)] Passwords datatype error was encountered: Failed to get encryption key during database cleanup.
+[493302:493302:0216/175852.342023:ERROR:data_type_manager_impl.cc(427)] Passwords datatype error was encountered: Preexisting controller error on configuration
+[493985:25:0216/175854.551663:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+Opening in existing browser session.
+[494934:494934:0216/175904.756618:ERROR:cloud_policy_validator.cc(614)] New signature verification failed
+[494934:494969:0216/175905.289995:ERROR:nss_util.cc(345)] After loading Root Certs, loaded==false: NSS error code: -8018
+[495424:495424:0216/175908.254414:ERROR:cloud_policy_validator.cc(614)] New signature verification failed
+[495424:495446:0216/175909.235667:ERROR:nss_util.cc(345)] After loading Root Certs, loaded==false: NSS error code: -8018
+Opening in existing browser session.
+Opening in existing browser session.
+FetchError: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo EAI_AGAIN api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorZVdnCy/resources/app/node_modules/node-fetch/lib/index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EAI_AGAIN',
+  code: 'EAI_AGAIN'
+}
+Opening in existing browser session.
+[30627:0216/180647.742288:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -101
+FetchError: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo EAI_AGAIN api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorZVdnCy/resources/app/node_modules/node-fetch/lib/index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EAI_AGAIN',
+  code: 'EAI_AGAIN'
+}
+FetchError: request to https://api2.cursor.sh/aiserver.v1.AuthService/DownloadUpdate failed, reason: getaddrinfo EAI_AGAIN api2.cursor.sh
+    at ClientRequest.<anonymous> (/tmp/.mount_cursorZVdnCy/resources/app/node_modules/node-fetch/lib/index.js:1501:11)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:101:11)
+    at TLSSocket.socketErrorListener (node:_http_client:504:5)
+    at TLSSocket.emit (node:events:518:28)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  type: 'system',
+  errno: 'EAI_AGAIN',
+  code: 'EAI_AGAIN'
+}
+Opening in existing browser session.
+[90m[main 2025-02-16T13:12:48.783Z][0m Extension host with pid 31573 exited with code: 0, signal: unknown.
+[90m[main 2025-02-16T13:12:48.933Z][0m Extension host with pid 31443 exited with code: 0, signal: unknown.
+[91m[main 2025-02-16T13:12:49.097Z][0m [UtilityProcess id: 1, type: fileWatcher, pid: 31455]: crashed with code 15 and reason 'killed'
+[90m[main 2025-02-16T13:14:27.051Z][0m update#setState disabled
+[90m[main 2025-02-16T13:14:27.051Z][0m update#ctor - updates are disabled as there is no update URL
+[584880:0216/184429.541534:ERROR:nss_util.cc(345)] After loading Root Certs, loaded==false: NSS error code: -8018
+[90m[main 2025-02-16T13:23:48.703Z][0m Extension host with pid 585699 exited with code: 0, signal: unknown.
+[90m[main 2025-02-16T13:23:48.820Z][0m Extension host with pid 585632 exited with code: 0, signal: unknown.
+[91m[main 2025-02-16T13:23:48.897Z][0m [UtilityProcess id: 1, type: fileWatcher, pid: 585643]: crashed with code 15 and reason 'killed'
+[90m[main 2025-02-16T13:26:06.555Z][0m update#setState disabled
+[90m[main 2025-02-16T13:26:06.555Z][0m update#ctor - updates are disabled as there is no update URL
+[608733:0216/185609.249085:ERROR:nss_util.cc(345)] After loading Root Certs, loaded==false: NSS error code: -8018
+Opening in existing browser session.
+Opening in existing browser session.

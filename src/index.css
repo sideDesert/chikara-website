@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@import "./author.css";
+
+h1,
+h2,
+h5,
+h6 {
+  font-family: "Lisu Bosa", serif;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.h2 {
+  @apply text-3xl lg:text-4xl font-bold py-6 text-center md:whitespace-nowrap;
+}
+
+.h2_2 {
+  @apply text-3xl lg:text-4xl font-bold py-6 text-center md:whitespace-nowrap;
+}
+
+h3 {
+  font-family: "Author-Semibold";
+  @apply text-xl;
+}
+
+.wcbn {
+  @apply font-bold text-red-200 text-[8rem] lg:text-[8rem];
+}
+li,
+ul {
+  font-family: "Author-Regular", sans-serif;
+}
+
+.author {
+  font-family: "Author-Regular", sans-serif;
+  font-weight: 700 !important;
+}
+
+p {
+  max-width: 700px;
+  font-family: "Author-Regular", sans-serif;
+  @apply sm:text-lg md:text-xl lg:text-2xl xl:text-[26px];
+}
+
+.gradient-btn {
+  background: linear-gradient(to right, #ce2c38, #68161c);
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
