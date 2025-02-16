@@ -18,7 +18,143 @@
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chikara Martial Arts Academy</title>
+  <title>Chikara Martial Arts Academy | Best Karate Classes in Hyderabad</title>
+
+  <!-- Add Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Add Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Add SEO Meta Tags -->
+  <meta name="description" content="Chikara Martial Arts Academy - 35+ years of martial arts excellence in Hyderabad. Join our expert-led karate classes for kids, adults, and women. Learn authentic Shotokan Karate under Hanshi Venkatesham Puram." />
+  <meta name="keywords" content="karate classes, martial arts academy, Shotokan Karate, self defense, kids karate, adult karate, women self defense, Hyderabad martial arts, Chikara Academy, Hanshi Venkatesham Puram" />
+  <meta name="author" content="Chikara Martial Arts Academy" />
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Chikara Martial Arts Academy - Excellence in Karate Training" />
+  <meta property="og:description" content="Join Hyderabad's premier martial arts academy with 35+ years of excellence. Expert instruction in Shotokan Karate for all ages and skill levels." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:url" content="https://chikarakarate.com" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chikara Martial Arts Academy" />
+  <meta name="twitter:description" content="Premier martial arts training in Hyderabad. Join our expert-led karate classes for kids, adults, and women." />
+  <meta name="twitter:image" content="/logo.png" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px; /* Adjust this value based on your header height */
+    }
+
+    /* Popup styles */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .popup.show {
+      display: block;
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .popup-overlay.show {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #666;
+    }
+
+    .popup-content {
+      margin: 20px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .popup-button {
+      background: linear-gradient(to right, #CE2C38, #68161C);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .popup-button:hover {
+      opacity: 0.9;
+    }
+  </style>
+
+  <style>
+    .testimonials-swiper .swiper-button-next::after,
+    .testimonials-swiper .swiper-button-prev::after {
+      font-size: 24px;
+    }
+    
+    .testimonials-swiper .swiper-pagination-bullet {
+      background: white;
+      opacity: 0.5;
+    }
+    
+    .testimonials-swiper .swiper-pagination-bullet-active {
+      background: #CE2C38;
+      opacity: 1;
+    }
+
+    /* Improve button touch areas */
+    .testimonials-swiper .swiper-button-next,
+    .testimonials-swiper .swiper-button-prev {
+      width: 44px;
+      height: 44px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+
+    .testimonials-swiper .swiper-button-next:hover,
+    .testimonials-swiper .swiper-button-prev:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  </style>
 </head>
 
 <body class="bg-white text-black">
@@ -31,16 +167,15 @@
     </div>
     <div class="hidden md:block">
       <ul class="flex space-x-6">
-        <li class="text-black hover:text-red-500 cursor-pointer">About</li>
-        <li class="text-black hover:text-red-500 cursor-pointer">Instructors</li>
-        <li class="text-black hover:text-red-500 cursor-pointer">Offerings</li>
-        <li class="text-black hover:text-red-500 cursor-pointer">Programs</li>
-        <li class="text-black hover:text-red-500 cursor-pointer">Gallery</li>
-        <li class="text-black hover:text-red-500 cursor-pointer">Contact</li>
+        <li><a href="#about" class="text-black hover:text-red-500 cursor-pointer">About</a></li>
+        <li><a href="#instructors" class="text-black hover:text-red-500 cursor-pointer">Instructors</a></li>
+        <li><a href="#programs" class="text-black hover:text-red-500 cursor-pointer">Programs</a></li>
+        <li><a href="#gallery" class="text-black hover:text-red-500 cursor-pointer">Gallery</a></li>
+        <li><a href="#contact" class="text-black hover:text-red-500 cursor-pointer">Contact</a></li>
       </ul>
     </div>
   </nav>
-  <main class="h-[100vh] w-full flex justify-center items-center">
+  <main class="h-[100vh] w-full flex justify-center items-center" role="main" aria-label="Welcome to Chikara Martial Arts Academy">
     <div class="absolute inset-0 z-0 w-full h-full">
       <img src="hero-bg.jpg" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-white/30"></div>
@@ -67,7 +202,7 @@
         </div>
 
         <div>
-          <a href="#demo">
+          <a href="#contact">
             <button class="gradient-btn cursor-pointer text-white mt-12 px-4 py-2 rounded-xl">
               Book your Demo Today!
             </button>
@@ -80,7 +215,7 @@
 
   <!-- About Us and Why Chikara -->
 
-  <section class="p-6 flex overflow-hidden flex-col gap-12 items-center">
+  <section id="about" class="p-6 flex overflow-hidden flex-col gap-12 items-center" aria-label="About Chikara Martial Arts Academy">
     <div class="flex flex-col gap-12 items-center">
       <div class="w-full flex flex-col gap-4 max-w-[1200px] items-center">
         <h2 class="h2 py-6 text-center md:whitespace-nowrap">About Us
@@ -317,8 +452,159 @@
     </div>
   </section> -->
 
+  <!-- Add this after the Red Stats section and before the Instructors section -->
+
+  <!-- Testimonials -->
+  <section class="p-8 lg:p-24 flex flex-col gap-12 items-center bg-[#181818] relative">
+    <!-- Logo watermark in background -->
+    <div class="absolute inset-0 opacity-5">
+      <img src="/logo.png" alt="" class="w-full h-full object-contain" />
+    </div>
+    
+    <!-- Testimonials Carousel -->
+    <div class="swiper testimonials-swiper max-w-[900px] relative z-10">
+      <div class="swiper-wrapper">
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide">
+          <div class="flex flex-col items-center gap-6 text-center">
+            <div class="w-16 h-16">
+              <img src="/logo.png" alt="Chikara Logo" class="w-full h-full object-contain" />
+            </div>
+            <h3 class="text-red-500 text-2xl font-bold">Amazing Instructors!</h3>
+            <p class="text-white/80 text-lg italic max-w-[800px]">
+              "We've had a fantastic experience. The instructors are knowledgeable and supportive, and the classes are well-structured, focusing on both martial arts skills and personal development. The facilities are clean and well-equipped. It's a great environment for kids to learn discipline, build confidence, and stay fit. Highly recommend!"
+            </p>
+            <!-- Star Rating -->
+            <div class="flex gap-1">
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+            </div>
+            <p class="text-white/60 font-medium">Narasimha Battini</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide">
+          <div class="flex flex-col items-center gap-6 text-center">
+            <div class="w-16 h-16">
+              <img src="/logo.png" alt="Chikara Logo" class="w-full h-full object-contain" />
+            </div>
+            <h3 class="text-red-500 text-2xl font-bold">Excellent Training!</h3>
+            <p class="text-white/80 text-lg italic max-w-[800px]">
+              "I've been going for a couple of months now and I'm really happy with the training. Initially I was apprehensive that I will not last past a few classes because my body won't be able to take it, but Mr. Venkatesh is an experienced professional who understood my capacity and pushed me to the right extent without going overboard. I can feel the difference in my fitness and self confidence and now I'm excited about how much more I can learn and do."
+            </p>
+            <!-- Star Rating -->
+            <div class="flex gap-1">
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+            </div>
+            <p class="text-white/60 font-medium">Pranith</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide">
+          <div class="flex flex-col items-center gap-6 text-center">
+            <div class="w-16 h-16">
+              <img src="/logo.png" alt="Chikara Logo" class="w-full h-full object-contain" />
+            </div>
+            <h3 class="text-red-500 text-2xl font-bold">Great for Kids!</h3>
+            <p class="text-white/80 text-lg italic max-w-[800px]">
+              "My son has been training with Venkatesh Sir since last 2.5 years now; and we are extremely happy with how Venkatesh sir has been training him"
+            </p>
+            <!-- Star Rating -->
+            <div class="flex gap-1">
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+            </div>
+            <p class="text-white/60 font-medium">Devender Singh</p>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="swiper-slide">
+          <div class="flex flex-col items-center gap-6 text-center">
+            <div class="w-16 h-16">
+              <img src="/logo.png" alt="Chikara Logo" class="w-full h-full object-contain" />
+            </div>
+            <h3 class="text-red-500 text-2xl font-bold">Positive Learning Environment!</h3>
+            <p class="text-white/80 text-lg italic max-w-[800px]">
+              "I've been learning Karate with Venkatesham sir since I was in 6th grade. He is very friendly and they taught me in a way that I enjoyed karate and also learned it well. the dojo has a very positive vibe to it."
+            </p>
+            <!-- Star Rating -->
+            <div class="flex gap-1">
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+              <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+              </svg>
+            </div>
+            <p class="text-white/60 font-medium">Nishanth, 12th grade student</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add navigation buttons with custom styles -->
+    <div class="swiper-button-next !text-white after:!text-2xl hover:!text-red-500 transition-colors"></div>
+    <div class="swiper-button-prev !text-white after:!text-2xl hover:!text-red-500 transition-colors"></div>
+
+    <!-- Add pagination with custom styles -->
+    <div class="swiper-pagination !bottom-[-2rem]"></div>
+  </div>
+</section>
+
   <!-- Instructors -->
-  <section class="p-10">
+  <section id="instructors" class="p-10">
     <div class="my-10">
       <h2 class="h2">Our Instructors</h2>
     </div>
@@ -368,7 +654,7 @@
   <section></section>
 
   <!-- Programs -->
-  <section class="p-4 lg:p-24 flex flex-col gap-4 items-center">
+  <section id="programs" class="p-4 lg:p-24 flex flex-col gap-4 items-center" aria-label="Martial Arts Training Programs">
     <div>
       <h2 class="h2">Programs</h2>
     </div>
@@ -452,7 +738,7 @@
   </section>
 
   <!-- Gallery -->
-  <section class="p-4 flex flex-col gap-4 items-center pb-8 lg:pb-24">
+  <section id="gallery" class="p-4 flex flex-col gap-4 items-center pb-8 lg:pb-24">
     <div>
       <h2 class="h2">Gallery</h2>
     </div>
@@ -619,7 +905,7 @@
   </section>
 
   <!-- Demo & Contact -->
-  <section id="demo" class="grid-cols-1 grid lg:grid-cols-2 lg:px-24">
+  <section id="contact" class="grid-cols-1 grid lg:grid-cols-2 lg:px-24" aria-label="Contact and Demo Booking">
     <div class="bg-white flex flex-col justify-center m-2 p-2 lg:p-10 rounded-lg max-w-full">
       <h2 class="h2 text-red-500 mb-6">Book your Demo Today!</h2>
       <form class="flex flex-col gap-4" action="YOUR_WEB_APP_URL" method="POST">
@@ -643,9 +929,21 @@
       </form>
 
       <script>
+        function showPopup() {
+          document.getElementById('formPopup').classList.add('show');
+          document.getElementById('popupOverlay').classList.add('show');
+        }
+
+        function closePopup() {
+          document.getElementById('formPopup').classList.remove('show');
+          document.getElementById('popupOverlay').classList.remove('show');
+        }
+
         document.querySelector("form").addEventListener("submit", function (e) {
           e.preventDefault();
           console.log("Form submitted!");
+          showPopup();
+          this.reset(); // Reset form fields
         });
       </script>
 
@@ -748,6 +1046,126 @@
   </div>
 
   <script type="module" src="/src/main.ts"></script>
+
+  <!-- Add Schema.org markup for local business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MartialArtsSchool",
+    "name": "Chikara Martial Arts Academy",
+    "image": "/logo.png",
+    "description": "Premier martial arts academy in Hyderabad offering expert karate training for kids, adults, and women with 35+ years of excellence.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3rd floor, Kakatiya Golden Crysta, Muppas Panchavati Colony",
+      "addressLocality": "Manikonda",
+      "addressRegion": "Hyderabad",
+      "postalCode": "500034",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "YOUR_LATITUDE",
+      "longitude": "YOUR_LONGITUDE"
+    },
+    "url": "https://chikarakarate.com",
+    "telephone": "+919876543210",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": ["06:00", "16:00"],
+        "closes": ["10:00", "22:00"]
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/chikarakarate",
+      "https://instagram.com/chikarakarate",
+      "https://twitter.com/chikarakarate",
+      "https://youtube.com/chikarakarate"
+    ]
+  }
+  </script>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          // Calculate header height (assuming 80px, adjust if different)
+          const headerOffset = 80;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+  <script>
+    // Initialize testimonials slider
+    document.addEventListener('DOMContentLoaded', function() {
+      const testimonialSwiper = new Swiper('.testimonials-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: '.testimonials-swiper .swiper-button-next',
+          prevEl: '.testimonials-swiper .swiper-button-prev',
+        },
+        pagination: {
+          el: '.testimonials-swiper .swiper-pagination',
+          clickable: true,
+        }
+      });
+
+      // Initialize gallery slider
+      const gallerySwiper = new Swiper('.gallery-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+        navigation: {
+          nextEl: '.gallery-swiper .swiper-button-next',
+          prevEl: '.gallery-swiper .swiper-button-prev',
+        },
+        pagination: {
+          el: '.gallery-swiper .swiper-pagination',
+          clickable: true,
+        }
+      });
+    });
+  </script>
+
+  <div id="formPopup" class="popup">
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+    <div class="popup-content">Thank you for booking your demo!, Our customer care will contact you soon.</div>
+    <button class="popup-button" onclick="closePopup()">OK</button>
+  </div>
+  <div id="popupOverlay" class="popup-overlay"></div>
 </body>
 
 </html>

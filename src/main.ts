@@ -6,7 +6,28 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// Initialize Swiper
+// Initialize Testimonials Swiper
+const testimonialSwiper = new Swiper(".testimonials-swiper", {
+  modules: [Navigation, Pagination, Autoplay],
+  slidesPerView: 1,
+  spaceBetween: 30,
+  speed: 400,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});
+
+// Initialize Gallery Swiper
 const gallerySwiper = new Swiper(".gallery-swiper", {
   modules: [Navigation, Pagination, Autoplay],
   slidesPerView: 1,
