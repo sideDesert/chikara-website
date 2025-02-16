@@ -130,3 +130,13 @@ Opening in existing browser session.
 [608733:0216/185609.249085:ERROR:nss_util.cc(345)] After loading Root Certs, loaded==false: NSS error code: -8018
 Opening in existing browser session.
 Opening in existing browser session.
+(node:608733) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 child-process-gone listeners added to [App]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `cursor --trace-warnings ...` to show where the warning was created)
+[90m[main 2025-02-16T17:42:37.845Z][0m Extension host with pid 1305823 exited with code: 0, signal: unknown.
+[90m[main 2025-02-16T17:42:37.938Z][0m Extension host with pid 1305694 exited with code: 0, signal: unknown.
+[91m[main 2025-02-16T17:42:37.944Z][0m [UtilityProcess id: 3, type: fileWatcher, pid: 1305685]: crashed with code 15 and reason 'killed'
+[91m[main 2025-02-16T17:42:38.939Z][0m Extension host with pid 1305694 still exists, forcefully killing it...
+[91m[main 2025-02-16T17:42:44.411Z][0m Blocked vscode-file request vscode-file://vscode-app/tmp/.mount_cursorHfmmub/resources/app/out/media/logo.png
+[91m[main 2025-02-16T17:43:08.017Z][0m [UtilityProcess id: 5, type: fileWatcher, pid: 1309636]: crashed with code 15 and reason 'killed'
+[90m[main 2025-02-16T17:43:08.136Z][0m Extension host with pid 1309697 exited with code: 0, signal: unknown.
+[90m[main 2025-02-16T17:43:08.722Z][0m Extension host with pid 1309720 exited with code: 0, signal: unknown.

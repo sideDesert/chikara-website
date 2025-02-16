@@ -2,12 +2,9 @@ import "./style.css";
 import "./index.css";
 import Swiper from "swiper";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 // Initialize Testimonials Swiper
-const testimonialSwiper = new Swiper(".testimonials-swiper", {
+new Swiper(".testimonials-swiper", {
   modules: [Navigation, Pagination, Autoplay],
   slidesPerView: 1,
   spaceBetween: 30,
@@ -24,11 +21,11 @@ const testimonialSwiper = new Swiper(".testimonials-swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  }
+  },
 });
 
 // Initialize Gallery Swiper
-const gallerySwiper = new Swiper(".gallery-swiper", {
+new Swiper(".gallery-swiper", {
   modules: [Navigation, Pagination, Autoplay],
   slidesPerView: 1,
   spaceBetween: 30,
